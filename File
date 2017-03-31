@@ -1,0 +1,85 @@
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+let contex = appDelegate.persistentContainer.viewContext
+
+let newUser = NSEntityDescription.insertNewObject(forEntityName: "Contact", into: contex)
+
+newUser.setValue( name.text!, forKey: "name")
+newUser.setValue(subname.text!, forKey: "subname")
+newUser.setValue(addres.text!, forKey: "adress")
+newUser.setValue(mail.text!, forKey: "email")
+
+do {
+try contex.save()
+print("save")
+}
+catch
+{
+print("exc")
+}
+
+
+}
+
+
+
+
+
+import UIKit
+import CoreData
+
+class AddViewController: UIViewController {
+
+@IBOutlet weak var add: UIButton!
+@IBOutlet weak var mail: UITextField!
+@IBOutlet weak var addres: UITextField!
+@IBOutlet weak var subname: UITextField!
+@IBOutlet weak var name: UITextField!
+override func viewDidLoad() {
+super.viewDidLoad()
+
+// Do any additional setup after loading the view.
+}
+
+override func didReceiveMemoryWarning() {
+super.didReceiveMemoryWarning()
+// Dispose of any resources that can be recreated.
+}
+
+@IBAction func press(_ sender: Any) {
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+let contex = appDelegate.persistentContainer.viewContext
+
+let newUser = NSEntityDescription.insertNewObject(forEntityName: "Contact", into: contex)
+
+newUser.setValue( name.text!, forKey: "name")
+newUser.setValue(subname.text!, forKey: "subname")
+newUser.setValue(addres.text!, forKey: "adress")
+newUser.setValue(mail.text!, forKey: "email")
+
+do {
+try contex.save()
+print("save")
+}
+catch
+{
+print("exc")
+}
+
+
+}
+
+/*
+// MARK: - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+// Get the new view controller using segue.destinationViewController.
+// Pass the selected object to the new view controller.
+}
+*/
+
+}
