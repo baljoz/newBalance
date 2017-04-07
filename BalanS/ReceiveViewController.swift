@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ReceiveViewController: UIViewController {
+class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var table: UITableView!
     @IBOutlet weak var dugme: UIBarButtonItem!
     //@IBOutlet weak var dugme: UIBarButtonItem!
     override func viewDidLoad() {
@@ -23,6 +24,16 @@ class ReceiveViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "adressCell", for: indexPath) as! AdressTableViewCell
+        
+        cell.label.text = "dasd2edaw2dad2dae2dad2dca22d2d22425"
+        return cell
     }
     
 

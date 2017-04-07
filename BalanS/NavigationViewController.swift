@@ -8,16 +8,22 @@
 
 import UIKit
 
-class NavigationViewController: UIViewController {
+class NavigationViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+   
+    @IBOutlet weak var balanceView: UIView!
+    @IBOutlet weak var send: UIButton!
+    @IBOutlet weak var balance: UIButton!
+    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var walletBallance: UILabel!
     @IBOutlet weak var dugme: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dugme.target=revealViewController()
         dugme.action = #selector(SWRevealViewController.revealToggle(_:))
-
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +31,24 @@ class NavigationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ballancecell", for: indexPath) as! BalanceTableViewCell
+        
+        cell.valutName.text = "EUR"
+        cell.valutImage.image = UIImage(named:"Euro")
+        cell.valutValue.text = "543"
+        return cell
+    }
+    
+    @IBAction func onClickSend(_ sender: Any) {
+        
+        send.isEnabled = false
+    }
+    
     /*
     // MARK: - Navigation
 

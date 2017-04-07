@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */; };
+		AC2035F51E981F6E0087C055 /* AdressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */; };
 		AC29216F1E76DFD5001C64D5 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */; };
 		AC2921711E76E4E4001C64D5 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2921701E76E4E4001C64D5 /* CellTableViewCell.swift */; };
 		AC2921731E76E60E001C64D5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2921721E76E60E001C64D5 /* TableViewController.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceTableViewCell.swift; path = ../BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressTableViewCell.swift; sourceTree = "<group>"; };
 		AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		AC2921701E76E4E4001C64D5 /* CellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellTableViewCell.swift; path = ../CellTableViewCell.swift; sourceTree = "<group>"; };
 		AC2921721E76E60E001C64D5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 		AC90580B1E7959B4000418F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACBCE0711E716C3C00D372E7 /* BalanS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBCE0741E716C3C00D372E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACBCE0761E716C3C00D372E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../BalanS/ViewController.swift; sourceTree = "<group>"; };
+		ACBCE0761E716C3C00D372E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACBCE07C1E716C3C00D372E7 /* BalanS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BalanS.xcdatamodel; sourceTree = "<group>"; };
 		ACBCE07E1E716C3C00D372E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACBCE0811E716C3C00D372E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 		ACBCE0731E716C3C00D372E7 /* BalanS */ = {
 			isa = PBXGroup;
 			children = (
+				AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */,
+				ACBCE0761E716C3C00D372E7 /* ViewController.swift */,
 				ACBCE0741E716C3C00D372E7 /* AppDelegate.swift */,
 				AC695D001E78146E0042AE2B /* RegViewController.swift */,
 				AC90580A1E7959B4000418F0 /* Main.storyboard */,
@@ -151,6 +157,7 @@
 				ACBCE07E1E716C3C00D372E7 /* Assets.xcassets */,
 				AC2921741E76EE2D001C64D5 /* LeftSlider */,
 				ACFDB77D1E792BE7007699E6 /* Contact */,
+				AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */,
 			);
 			path = BalanS;
 			sourceTree = "<group>";
@@ -167,7 +174,6 @@
 		ACBCE0961E716C3D00D372E7 /* BalanSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				ACBCE0761E716C3C00D372E7 /* ViewController.swift */,
 				ACBCE0971E716C3D00D372E7 /* BalanSUITests.swift */,
 				ACBCE0991E716C3D00D372E7 /* Info.plist */,
 			);
@@ -322,12 +328,14 @@
 			files = (
 				ACBCE07D1E716C3C00D372E7 /* BalanS.xcdatamodeld in Sources */,
 				ACF0DBBA1E7A89CE0056F20B /* ContactViewController.swift in Sources */,
+				AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */,
 				AC695CF81E77DF330042AE2B /* ReceiveViewController.swift in Sources */,
 				AC2921731E76E60E001C64D5 /* TableViewController.swift in Sources */,
 				ACF0DBB81E7A88B30056F20B /* ContactTableViewCell.swift in Sources */,
 				ACBCE0771E716C3C00D372E7 /* ViewController.swift in Sources */,
 				ACBCE0751E716C3C00D372E7 /* AppDelegate.swift in Sources */,
 				ACF0DBBE1E7AA3B00056F20B /* DodajViewController.swift in Sources */,
+				AC2035F51E981F6E0087C055 /* AdressTableViewCell.swift in Sources */,
 				AC2921761E76FDE0001C64D5 /* SendViewController.swift in Sources */,
 				AC2921711E76E4E4001C64D5 /* CellTableViewCell.swift in Sources */,
 				AC695D011E78146E0042AE2B /* RegViewController.swift in Sources */,

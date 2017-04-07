@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var table: UITableView!
     var ManuNameArray:Array = [String]()
     var iconArray:Array = [UIImage]()
     
@@ -19,7 +20,9 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         //prvi parametar bzvz
         iconArray = [UIImage(named:"send")!,UIImage(named:"send")!,UIImage(named:"Receive")!,UIImage(named:"Select")!,UIImage(named:"Contact")!]
+        
         // Do any additional setup after loading the view.
+        table.isScrollEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
