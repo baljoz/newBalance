@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */; };
 		AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */; };
 		AC2035F51E981F6E0087C055 /* AdressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */; };
 		AC29216F1E76DFD5001C64D5 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceTableViewCell.swift; path = ../BalanceTableViewCell.swift; sourceTree = "<group>"; };
 		AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressTableViewCell.swift; sourceTree = "<group>"; };
 		AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -106,18 +108,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070A0D7C1EC0C05F00F5AE65 /* ViewControl */ = {
+			isa = PBXGroup;
+			children = (
+				ACBCE0761E716C3C00D372E7 /* ViewController.swift */,
+				AC695D001E78146E0042AE2B /* RegViewController.swift */,
+				AC2921751E76FDE0001C64D5 /* SendViewController.swift */,
+				AC2921721E76E60E001C64D5 /* TableViewController.swift */,
+				AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */,
+				AC695CF91E77F5850042AE2B /* ListViewController.swift */,
+				AC695CF71E77DF330042AE2B /* ReceiveViewController.swift */,
+				ACF0DBB91E7A89CE0056F20B /* ContactViewController.swift */,
+				ACF0DBBD1E7AA3AF0056F20B /* DodajViewController.swift */,
+				070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */,
+			);
+			name = ViewControl;
+			sourceTree = "<group>";
+		};
 		AC2921741E76EE2D001C64D5 /* LeftSlider */ = {
 			isa = PBXGroup;
 			children = (
-				AC2921751E76FDE0001C64D5 /* SendViewController.swift */,
-				AC2921721E76E60E001C64D5 /* TableViewController.swift */,
 				AC2921701E76E4E4001C64D5 /* CellTableViewCell.swift */,
 				ACBCE0A71E71728300D372E7 /* SWRevealViewController.m */,
 				ACBCE0A61E71728300D372E7 /* SWRevealViewController.h */,
 				ACBCE0A51E71728200D372E7 /* BalanS-Bridging-Header.h */,
-				AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */,
-				AC695CF71E77DF330042AE2B /* ReceiveViewController.swift */,
-				AC695CF91E77F5850042AE2B /* ListViewController.swift */,
 			);
 			name = LeftSlider;
 			sourceTree = "<group>";
@@ -146,18 +160,15 @@
 		ACBCE0731E716C3C00D372E7 /* BalanS */ = {
 			isa = PBXGroup;
 			children = (
-				AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */,
-				ACBCE0761E716C3C00D372E7 /* ViewController.swift */,
 				ACBCE0741E716C3C00D372E7 /* AppDelegate.swift */,
-				AC695D001E78146E0042AE2B /* RegViewController.swift */,
 				AC90580A1E7959B4000418F0 /* Main.storyboard */,
 				ACBCE0801E716C3C00D372E7 /* LaunchScreen.storyboard */,
 				ACBCE0831E716C3C00D372E7 /* Info.plist */,
 				ACBCE07B1E716C3C00D372E7 /* BalanS.xcdatamodeld */,
 				ACBCE07E1E716C3C00D372E7 /* Assets.xcassets */,
+				070A0D7C1EC0C05F00F5AE65 /* ViewControl */,
 				AC2921741E76EE2D001C64D5 /* LeftSlider */,
-				ACFDB77D1E792BE7007699E6 /* Contact */,
-				AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */,
+				ACFDB77D1E792BE7007699E6 /* TableViewCell */,
 			);
 			path = BalanS;
 			sourceTree = "<group>";
@@ -180,14 +191,14 @@
 			path = BalanSUITests;
 			sourceTree = "<group>";
 		};
-		ACFDB77D1E792BE7007699E6 /* Contact */ = {
+		ACFDB77D1E792BE7007699E6 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				ACF0DBB71E7A88B30056F20B /* ContactTableViewCell.swift */,
-				ACF0DBB91E7A89CE0056F20B /* ContactViewController.swift */,
-				ACF0DBBD1E7AA3AF0056F20B /* DodajViewController.swift */,
+				AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */,
+				AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */,
 			);
-			name = Contact;
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 			files = (
 				ACBCE07D1E716C3C00D372E7 /* BalanS.xcdatamodeld in Sources */,
 				ACF0DBBA1E7A89CE0056F20B /* ContactViewController.swift in Sources */,
+				070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */,
 				AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */,
 				AC695CF81E77DF330042AE2B /* ReceiveViewController.swift in Sources */,
 				AC2921731E76E60E001C64D5 /* TableViewController.swift in Sources */,

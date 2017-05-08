@@ -16,7 +16,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
- ManuNameArray = ["BALLANCE STORE","TRANSACTION","LOGOUT"]
+        ManuNameArray = ["BALLANCE STORE","TRANSACTION","SEND","RECEIVE","QR SCANING","LOGOUT"]
         
        
         
@@ -47,27 +47,8 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         let cell:CellTableViewCell = tableView.cellForRow(at: indexPath) as! CellTableViewCell
         
-         /* if cell.labela.text! == "Send"
-         {
-            
-            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SendViewController") as! SendViewController
-            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-            
-            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-         
-         }*/
-    /*  else   if cell.labela.text! == "Receive"
-         {
-         
-         
-         let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-         let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "ReceiveViewController") as! ReceiveViewController
-         let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-         
-         revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-         }*/
-      //  var p : Int
+    
+            //  var p : Int
       //  p += 1
         if cell.labela.text! == "TRANSACTION"
           {
@@ -84,6 +65,51 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             
               revealviewcontroller.pushFrontViewController(newFrontCOntroler, animated: true)
     }
+        
+        else   if cell.labela.text! == "RECEIVE"
+        {
+            
+            
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "ReceiveViewController") as! ReceiveViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+        }
+        else if cell.labela.text! == "SEND"
+         {
+         
+         let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+         let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SendViewController") as! SendViewController
+         let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+         
+         revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+         
+         }
+        
+        else if cell.labela.text! == "QR SCANING"
+        {
+            
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "qr") as! QRViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+            
+        }
+        else if cell.labela.text! == "LOGOUT"
+        {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "main") as UIViewController
+            self.present(nextViewController, animated:true, completion:nil)
+            //  let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+           // let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "main") as! ViewController
+          //  let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+        //    revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+            
+        }
          /* else if cell.labela.text! == "Contact"
           {
             let mainstoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
