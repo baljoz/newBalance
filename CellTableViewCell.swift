@@ -11,7 +11,6 @@ import UIKit
 class CellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labela: UILabel!
-    @IBOutlet weak var slika: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

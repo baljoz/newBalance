@@ -16,10 +16,9 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
- ManuNameArray = ["My Balance","Send","Receive","ViewTranstaction","Contact"]
+ ManuNameArray = ["BALLANCE STORE","TRANSACTION","LOGOUT"]
         
-        //prvi parametar bzvz
-        iconArray = [UIImage(named:"send")!,UIImage(named:"send")!,UIImage(named:"Receive")!,UIImage(named:"Select")!,UIImage(named:"Contact")!]
+       
         
         // Do any additional setup after loading the view.
         table.isScrollEnabled = false
@@ -38,7 +37,6 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell", for: indexPath) as! CellTableViewCell
        
         cell.labela.text! = ManuNameArray[indexPath.row]
-        cell.slika.image = iconArray[indexPath.row]
         
         return cell
     }
@@ -49,7 +47,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         let cell:CellTableViewCell = tableView.cellForRow(at: indexPath) as! CellTableViewCell
         
-          if cell.labela.text! == "Send"
+         /* if cell.labela.text! == "Send"
          {
             
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -58,8 +56,8 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
          
-         }
-      else   if cell.labela.text! == "Receive"
+         }*/
+    /*  else   if cell.labela.text! == "Receive"
          {
          
          
@@ -68,16 +66,17 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
          let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
          
          revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-         }
-        
-        else if cell.labela.text! == "ViewTranstaction"
+         }*/
+      //  var p : Int
+      //  p += 1
+        if cell.labela.text! == "TRANSACTION"
           {
             let mainstoreboart:UIStoryboard = UIStoryboard (name: "Main", bundle : nil)
             let newViewcontroler=mainstoreboart.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
             let newFrontControler = UINavigationController.init(rootViewController: newViewcontroler )
             revealviewcontroller.pushFrontViewController(newFrontControler, animated: true)
         }
-        else if cell.labela.text! == "My Balance"
+        else if cell.labela.text! == "BALLANCE STORE"
           {
             let mainstoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let newViewCOntroller = mainstoreboard.instantiateViewController(withIdentifier: "NavigationViewController") as! NavigationViewController
@@ -85,7 +84,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             
               revealviewcontroller.pushFrontViewController(newFrontCOntroler, animated: true)
     }
-          else if cell.labela.text! == "Contact"
+         /* else if cell.labela.text! == "Contact"
           {
             let mainstoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let newViewCOntroller = mainstoreboard.instantiateViewController(withIdentifier: "contact") as! ContactViewController
@@ -93,7 +92,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             let newFrontCOntroler = UINavigationController.init(rootViewController: newViewCOntroller)
             
             revealviewcontroller.pushFrontViewController(newFrontCOntroler, animated: true)
-        }
+        }*/
     }
     /*
     // MARK: - Navigation
