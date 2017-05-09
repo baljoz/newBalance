@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */; };
+		07AD0E1F1EC1C14C003880F7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0E1E1EC1C14C003880F7 /* TestViewController.swift */; };
+		07AD0E231EC1E346003880F7 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0E221EC1E346003880F7 /* ListTableViewCell.swift */; };
+		07AD0E251EC1EF1B003880F7 /* SendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0E241EC1EF1B003880F7 /* SendTableViewCell.swift */; };
 		AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */; };
 		AC2035F51E981F6E0087C055 /* AdressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */; };
 		AC29216F1E76DFD5001C64D5 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */; };
@@ -16,7 +19,6 @@
 		AC2921761E76FDE0001C64D5 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2921751E76FDE0001C64D5 /* SendViewController.swift */; };
 		AC695CF81E77DF330042AE2B /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC695CF71E77DF330042AE2B /* ReceiveViewController.swift */; };
 		AC695CFA1E77F5850042AE2B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC695CF91E77F5850042AE2B /* ListViewController.swift */; };
-		AC695D011E78146E0042AE2B /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC695D001E78146E0042AE2B /* RegViewController.swift */; };
 		AC90580C1E7959B4000418F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC90580A1E7959B4000418F0 /* Main.storyboard */; };
 		ACBCE0751E716C3C00D372E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBCE0741E716C3C00D372E7 /* AppDelegate.swift */; };
 		ACBCE0771E716C3C00D372E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBCE0761E716C3C00D372E7 /* ViewController.swift */; };
@@ -51,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		07AD0E1E1EC1C14C003880F7 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		07AD0E221EC1E346003880F7 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		07AD0E241EC1EF1B003880F7 /* SendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendTableViewCell.swift; sourceTree = "<group>"; };
 		AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceTableViewCell.swift; path = ../BalanceTableViewCell.swift; sourceTree = "<group>"; };
 		AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressTableViewCell.swift; sourceTree = "<group>"; };
 		AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +64,6 @@
 		AC2921751E76FDE0001C64D5 /* SendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		AC695CF71E77DF330042AE2B /* ReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		AC695CF91E77F5850042AE2B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		AC695D001E78146E0042AE2B /* RegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegViewController.swift; path = ../RegViewController.swift; sourceTree = "<group>"; };
 		AC90580B1E7959B4000418F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACBCE0711E716C3C00D372E7 /* BalanS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBCE0741E716C3C00D372E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				ACBCE0761E716C3C00D372E7 /* ViewController.swift */,
-				AC695D001E78146E0042AE2B /* RegViewController.swift */,
 				AC2921751E76FDE0001C64D5 /* SendViewController.swift */,
 				AC2921721E76E60E001C64D5 /* TableViewController.swift */,
 				AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */,
@@ -128,7 +131,6 @@
 		AC2921741E76EE2D001C64D5 /* LeftSlider */ = {
 			isa = PBXGroup;
 			children = (
-				AC2921701E76E4E4001C64D5 /* CellTableViewCell.swift */,
 				ACBCE0A71E71728300D372E7 /* SWRevealViewController.m */,
 				ACBCE0A61E71728300D372E7 /* SWRevealViewController.h */,
 				ACBCE0A51E71728200D372E7 /* BalanS-Bridging-Header.h */,
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				ACBCE0741E716C3C00D372E7 /* AppDelegate.swift */,
+				07AD0E1E1EC1C14C003880F7 /* TestViewController.swift */,
 				AC90580A1E7959B4000418F0 /* Main.storyboard */,
 				ACBCE0801E716C3C00D372E7 /* LaunchScreen.storyboard */,
 				ACBCE0831E716C3C00D372E7 /* Info.plist */,
@@ -194,9 +197,12 @@
 		ACFDB77D1E792BE7007699E6 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				AC2921701E76E4E4001C64D5 /* CellTableViewCell.swift */,
 				ACF0DBB71E7A88B30056F20B /* ContactTableViewCell.swift */,
 				AC2035F41E981F6E0087C055 /* AdressTableViewCell.swift */,
 				AC2035F21E97FA910087C055 /* BalanceTableViewCell.swift */,
+				07AD0E221EC1E346003880F7 /* ListTableViewCell.swift */,
+				07AD0E241EC1EF1B003880F7 /* SendTableViewCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -337,10 +343,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AD0E251EC1EF1B003880F7 /* SendTableViewCell.swift in Sources */,
 				ACBCE07D1E716C3C00D372E7 /* BalanS.xcdatamodeld in Sources */,
 				ACF0DBBA1E7A89CE0056F20B /* ContactViewController.swift in Sources */,
+				07AD0E1F1EC1C14C003880F7 /* TestViewController.swift in Sources */,
 				070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */,
 				AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */,
+				07AD0E231EC1E346003880F7 /* ListTableViewCell.swift in Sources */,
 				AC695CF81E77DF330042AE2B /* ReceiveViewController.swift in Sources */,
 				AC2921731E76E60E001C64D5 /* TableViewController.swift in Sources */,
 				ACF0DBB81E7A88B30056F20B /* ContactTableViewCell.swift in Sources */,
@@ -350,7 +359,6 @@
 				AC2035F51E981F6E0087C055 /* AdressTableViewCell.swift in Sources */,
 				AC2921761E76FDE0001C64D5 /* SendViewController.swift in Sources */,
 				AC2921711E76E4E4001C64D5 /* CellTableViewCell.swift in Sources */,
-				AC695D011E78146E0042AE2B /* RegViewController.swift in Sources */,
 				AC29216F1E76DFD5001C64D5 /* NavigationViewController.swift in Sources */,
 				AC695CFA1E77F5850042AE2B /* ListViewController.swift in Sources */,
 				ACBCE0A81E71728300D372E7 /* SWRevealViewController.m in Sources */,

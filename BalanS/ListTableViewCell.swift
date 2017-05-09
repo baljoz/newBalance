@@ -1,18 +1,18 @@
 //
-//  AdressTableViewCell.swift
+//  ListTableViewCell.swift
 //  BalanS
 //
-//  Created by Stefan Djordjevic on 4/7/17.
+//  Created by Milos Stosic on 5/9/17.
 //  Copyright © 2017 Stefan Djordjevic. All rights reserved.
 //
 
 import UIKit
 
-class AdressTableViewCell: UITableViewCell {
+class ListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var copyButton: UIButton!
-    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var coint: UILabel!
+    @IBOutlet weak var address: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

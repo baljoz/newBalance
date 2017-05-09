@@ -1,18 +1,15 @@
 //
-//  AdressTableViewCell.swift
+//  SendTableViewCell.swift
 //  BalanS
 //
-//  Created by Stefan Djordjevic on 4/7/17.
+//  Created by Milos Stosic on 5/9/17.
 //  Copyright © 2017 Stefan Djordjevic. All rights reserved.
 //
 
 import UIKit
 
-class AdressTableViewCell: UITableViewCell {
+class SendTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var copyButton: UIButton!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var img: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

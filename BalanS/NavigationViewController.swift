@@ -17,13 +17,16 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var walletBallance: UILabel!
     @IBOutlet weak var dugme: UIBarButtonItem!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         dugme.target=revealViewController()
         dugme.action = #selector(SWRevealViewController.revealToggle(_:))
         
-        
+        table.backgroundColor = nil
+ 
+        table.isScrollEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +44,7 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
         cell.valutName.text = "EUR"
         cell.valutImage.image = UIImage(named:"Euro")
         cell.valutValue.text = "543"
+        cell.backgroundColor = nil
         return cell
     }
     
