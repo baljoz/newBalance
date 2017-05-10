@@ -24,6 +24,14 @@ class ListViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
          images.append(UIImage(named:"recieve naizmenicni tab 2")!)
         table.backgroundColor = nil
         
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "wallet emc2")
+        imageView.image = image
+        
+        //       navigation.titleView.p
+        navigationItem.titleView = imageView
+        
     }
 
     override func didReceiveMemoryWarning() {

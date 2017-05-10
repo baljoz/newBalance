@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */; };
+		079786831EC310CA009D124A /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079786821EC310CA009D124A /* NavViewController.swift */; };
 		07AD0E1F1EC1C14C003880F7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0E1E1EC1C14C003880F7 /* TestViewController.swift */; };
 		07AD0E231EC1E346003880F7 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0E221EC1E346003880F7 /* ListTableViewCell.swift */; };
 		07AD0E251EC1EF1B003880F7 /* SendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0E241EC1EF1B003880F7 /* SendTableViewCell.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		079786821EC310CA009D124A /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		07AD0E1E1EC1C14C003880F7 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		07AD0E221EC1E346003880F7 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		07AD0E241EC1EF1B003880F7 /* SendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendTableViewCell.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				070A0D7C1EC0C05F00F5AE65 /* ViewControl */,
 				AC2921741E76EE2D001C64D5 /* LeftSlider */,
 				ACFDB77D1E792BE7007699E6 /* TableViewCell */,
+				079786821EC310CA009D124A /* NavViewController.swift */,
 			);
 			path = BalanS;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				07AD0E1F1EC1C14C003880F7 /* TestViewController.swift in Sources */,
 				070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */,
 				AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */,
+				079786831EC310CA009D124A /* NavViewController.swift in Sources */,
 				07AD0E231EC1E346003880F7 /* ListTableViewCell.swift in Sources */,
 				AC695CF81E77DF330042AE2B /* ReceiveViewController.swift in Sources */,
 				AC2921731E76E60E001C64D5 /* TableViewController.swift in Sources */,

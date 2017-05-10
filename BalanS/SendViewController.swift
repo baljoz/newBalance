@@ -10,6 +10,7 @@ import UIKit
 
 class SendViewController: UIViewController {
 
+    @IBOutlet weak var navigation: UINavigationItem!
   
     @IBOutlet weak var send: UIButton!
     @IBOutlet weak var vview: UIView!
@@ -22,12 +23,32 @@ class SendViewController: UIViewController {
          vview.layer.cornerRadius = 10
         send.layer.borderWidth = 1;
         send.layer.borderColor = UIColor(red: 128, green: 128, blue: 128, alpha: 1).cgColor
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "wallet emc2")
+        imageView.image = image
+        
+        //       navigation.titleView.p
+        navigation.titleView = imageView
+        
+   /*     self.navigationController.navigationBar.barTintColor = .blueColor()
+        self.navigationController.navigationBar.tintColor = .whiteColor()
+        self.navigationController.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.whiteColor()*/
+        
+        
+      //  navigationController?.navigationBar
+        
+        self.navigationController?.navigationBar.backgroundColor = .black
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-       
+     
+        
     }
     
 

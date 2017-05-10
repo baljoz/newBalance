@@ -10,6 +10,7 @@ import UIKit
 
 class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var navigation: UINavigationItem!
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var dugme: UIBarButtonItem!
     var images = [UIImage]()
@@ -22,7 +23,16 @@ class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDat
         images.append(UIImage(named:"recieve naizmenicni tab 1")!)
         images.append(UIImage(named:"recieve naizmenicni tab 2")!)
         table.backgroundColor = nil
-
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "wallet emc2")
+        imageView.image = image
+        
+        //       navigation.titleView.p
+        navigation.titleView = imageView
+       
+        
         // Do any additional setup after loading the view.
     }
 

@@ -11,6 +11,8 @@ import UIKit
 class NavigationViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
    
+    @IBOutlet weak var navigation: UINavigationItem!
+    
     @IBOutlet weak var balanceView: UIView!
     @IBOutlet weak var send: UIButton!
     @IBOutlet weak var balance: UIButton!
@@ -27,6 +29,19 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
         table.backgroundColor = nil
  
         table.isScrollEnabled = false
+        
+     /*   let logo = UIImage(named: "wallet emc2")
+        let imageView = UIImageView(image:logo)
+        self.navigation.titleView = imageView*/
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "wallet emc2")
+        imageView.image = image
+        
+ //       navigation.titleView.p
+        navigation.titleView = imageView
+        
+       
     }
 
     override func didReceiveMemoryWarning() {

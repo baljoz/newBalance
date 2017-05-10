@@ -17,11 +17,11 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         ManuNameArray = ["BALLANCE STORE","TRANSACTION","SEND","RECEIVE","QR SCANING","LOGOUT"]
-        
-       
+      
         
         // Do any additional setup after loading the view.
         table.isScrollEnabled = false
+        table.backgroundColor = nil
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +37,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell", for: indexPath) as! CellTableViewCell
        
         cell.labela.text! = ManuNameArray[indexPath.row]
-        
+        cell.backgroundColor = nil
         return cell
     }
     
@@ -52,49 +52,80 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
       //  p += 1
         if cell.labela.text! == "TRANSACTION"
           {
-            let mainstoreboart:UIStoryboard = UIStoryboard (name: "Main", bundle : nil)
+           /* let mainstoreboart:UIStoryboard = UIStoryboard (name: "Main", bundle : nil)
             let newViewcontroler=mainstoreboart.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
             let newFrontControler = UINavigationController.init(rootViewController: newViewcontroler )
             revealviewcontroller.pushFrontViewController(newFrontControler, animated: true)
+             transactionNavig*/
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "transactionNavig") as! NavViewController
+            revealviewcontroller.pushFrontViewController(newViewController, animated: true)
         }
         else if cell.labela.text! == "BALLANCE STORE"
           {
-            let mainstoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
+          /*  let mainstoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let newViewCOntroller = mainstoreboard.instantiateViewController(withIdentifier: "NavigationViewController") as! NavigationViewController
-            let newFrontCOntroler = UINavigationController.init(rootViewController: newViewCOntroller)
+            let newFrontCOntroler = UINavigationController.init(rootViewController: newViewCOntroller)*/
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "walletNavig") as! NavViewController
+
             
-              revealviewcontroller.pushFrontViewController(newFrontCOntroler, animated: true)
+            //walletNavig
+              revealviewcontroller.pushFrontViewController(newViewController, animated: true)
     }
         
         else   if cell.labela.text! == "RECEIVE"
         {
             
             
-            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+           /* let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "ReceiveViewController") as! ReceiveViewController
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+            */
+            //reveralNavig
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "receiveNavig") as! NavViewController
+            revealviewcontroller.pushFrontViewController(newViewController, animated: true)
+            //   self.present(newViewController, animated: true, completion: nil)
         }
         else if cell.labela.text! == "SEND"
          {
          
-         let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-         let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SendViewController") as! SendViewController
-         let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+         //let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+      //  let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SendViewController") as! SendViewController
+       //  let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
          
-         revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-         
+            
+          //  navigationController!.pushViewController(storyboard!.instantiateViewController(withIdentifier: "SendViewController") as! SendViewController, animated: true)
+        // revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+ 
+           /* let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "SendViewController") as! SendViewController
+            let navController = UINavigationController(rootViewController: VC1)
+            self.present(navController, animated:true, completion: nil)
+              revealviewcontroller.pushFrontViewController(VC1, animated: true)*/
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "navig") as! NavViewController
+            revealviewcontroller.pushFrontViewController(newViewController, animated: true)
+         //   self.present(newViewController, animated: true, completion: nil)
+           
          }
         
         else if cell.labela.text! == "QR SCANING"
         {
             
-            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+          /*  let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "qr") as! QRViewController
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
-            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)*/
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "QRNavig") as! NavViewController
+            revealviewcontroller.pushFrontViewController(newViewController, animated: true)
+
             
         }
         else if cell.labela.text! == "LOGOUT"
