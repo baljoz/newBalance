@@ -55,6 +55,11 @@ class ListViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         {
             cell.img.image = self.images[1]
         }
+        
+        
+        cell.address.text = "dasd2edaw2dad2dae2dad2dca22d2d22425"
+        
+        cell.coint.text="123"
         return cell
     }
     

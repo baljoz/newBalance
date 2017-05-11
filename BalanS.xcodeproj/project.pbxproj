@@ -113,6 +113,7 @@
 		070A0D7C1EC0C05F00F5AE65 /* ViewControl */ = {
 			isa = PBXGroup;
 			children = (
+				079786821EC310CA009D124A /* NavViewController.swift */,
 				ACBCE0761E716C3C00D372E7 /* ViewController.swift */,
 				AC2921751E76FDE0001C64D5 /* SendViewController.swift */,
 				AC2921721E76E60E001C64D5 /* TableViewController.swift */,
@@ -168,7 +169,6 @@
 				070A0D7C1EC0C05F00F5AE65 /* ViewControl */,
 				AC2921741E76EE2D001C64D5 /* LeftSlider */,
 				ACFDB77D1E792BE7007699E6 /* TableViewCell */,
-				079786821EC310CA009D124A /* NavViewController.swift */,
 			);
 			path = BalanS;
 			sourceTree = "<group>";

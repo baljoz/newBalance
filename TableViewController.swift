@@ -9,15 +9,20 @@
 import UIKit
 
 class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    
+    var images = [UIImage]()
     @IBOutlet weak var table: UITableView!
     var ManuNameArray:Array = [String]()
     var iconArray:Array = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["BALLANCE STORE","TRANSACTION","SEND","RECEIVE","QR SCANING","LOGOUT"]
-      
+        ManuNameArray = ["BALANCE STORE","TRANSACTION","SEND","RECEIVE","QR SCANNING","LOGOUT"]
+        images.append(UIImage(named : "wallet-1")!)
+        images.append(UIImage(named : "transaction")!)
+        images.append(UIImage(named : "send")!)
+        images.append(UIImage(named : "recieve")!)
+        images.append(UIImage(named : "qr")!)
+        images.append(UIImage(named : "logout")!)
         
         // Do any additional setup after loading the view.
         table.isScrollEnabled = false
@@ -38,6 +43,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
        
         cell.labela.text! = ManuNameArray[indexPath.row]
         cell.backgroundColor = nil
+        cell.img.image=images[indexPath.row]
         return cell
     }
     
@@ -61,7 +67,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "transactionNavig") as! NavViewController
             revealviewcontroller.pushFrontViewController(newViewController, animated: true)
         }
-        else if cell.labela.text! == "BALLANCE STORE"
+        else if cell.labela.text! == "BALANCE STORE"
           {
           /*  let mainstoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let newViewCOntroller = mainstoreboard.instantiateViewController(withIdentifier: "NavigationViewController") as! NavigationViewController
@@ -114,7 +120,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
            
          }
         
-        else if cell.labela.text! == "QR SCANING"
+        else if cell.labela.text! == "QR SCANNING"
         {
             
           /*  let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

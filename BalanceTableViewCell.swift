@@ -12,7 +12,8 @@ class BalanceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var valutValue: UILabel!
     @IBOutlet weak var valutName: UILabel!
-    @IBOutlet weak var valutImage: UIImageView!
+  
+    @IBOutlet weak var valuta: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

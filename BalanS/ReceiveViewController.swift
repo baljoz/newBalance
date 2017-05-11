@@ -32,7 +32,7 @@ class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDat
         //       navigation.titleView.p
       //  navigation.titleView = imageView
        
-        navigation.title="RECIEVE"
+        navigation.title="RECEIVE"
         // Do any additional setup after loading the view.
     }
 

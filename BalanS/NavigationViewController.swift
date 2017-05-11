@@ -20,6 +20,9 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var walletBallance: UILabel!
     @IBOutlet weak var dugme: UIBarButtonItem!
+    var valutname = [String]()
+    var images = [UIImage]()
+    var valutarray = [String]()
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -47,6 +50,22 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
       //  self.navigationItem.rightBarButtonItem.customView.alpha = 0.5;
         
         table.allowsSelection = false
+         valutarray.append("Ƀ")
+        valutarray.append("₽")
+        valutarray.append("£")
+        valutarray.append("$")
+        
+       
+        valutarray.append("¥")
+        valutarray.append("€")
+        
+        valutname.append("Bitcoint")
+         valutname.append("Ruble")
+         valutname.append("Pound")
+         valutname.append("Dollar")
+         valutname.append("Yen")
+         valutname.append("Euro")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,16 +74,17 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ballancecell", for: indexPath) as! BalanceTableViewCell
         
-        cell.valutName.text = "EUR"
-        cell.valutImage.image = UIImage(named:"Euro")
+        cell.valutName.text = valutname[indexPath.row]
+     //   cell.valutImage.image = UIImage(named:"Euro")
         cell.valutValue.text = "543"
         cell.backgroundColor = nil
+      cell.valuta.text=valutarray[indexPath.row]
         return cell
     }
     
