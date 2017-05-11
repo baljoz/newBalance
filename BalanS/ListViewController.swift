@@ -20,8 +20,8 @@ class ListViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         dugme.action = #selector(SWRevealViewController.revealToggle(_:))
         // Do any additional setup after loading the view.
         table.backgroundColor = nil
-        images.append(UIImage(named:"recieve naizmenicni tab 1")!)
-         images.append(UIImage(named:"recieve naizmenicni tab 2")!)
+        images.append(UIImage(named:"ispupceno polje 2")!)
+        images.append(UIImage(named:"udubljeno polje")!)
         table.backgroundColor = nil
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
@@ -30,8 +30,8 @@ class ListViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         imageView.image = image
         
         //       navigation.titleView.p
-        navigationItem.titleView = imageView
-        
+       // navigationItem.titleView = imageView
+        navigationItem.title="TRANSACTION"
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,9 +45,11 @@ class ListViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
         
+   //     cell.label.text = "dasd2edaw2dad2dae2dad2dca22d2d22425"
+        
         if indexPath.row%2 == 0
         {
-              cell.img.image = self.images[0]
+            cell.img.image = self.images[0]
         }
         else
         {

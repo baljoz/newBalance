@@ -30,9 +30,7 @@
 		ACBCE0981E716C3D00D372E7 /* BalanSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBCE0971E716C3D00D372E7 /* BalanSUITests.swift */; };
 		ACBCE0A81E71728300D372E7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCE0A71E71728300D372E7 /* SWRevealViewController.m */; };
 		ACF0DBB81E7A88B30056F20B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0DBB71E7A88B30056F20B /* ContactTableViewCell.swift */; };
-		ACF0DBBA1E7A89CE0056F20B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0DBB91E7A89CE0056F20B /* ContactViewController.swift */; };
 		ACF0DBBC1E7AA27B0056F20B /* File in Resources */ = {isa = PBXBuildFile; fileRef = ACF0DBBB1E7AA27B0056F20B /* File */; };
-		ACF0DBBE1E7AA3B00056F20B /* DodajViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0DBBD1E7AA3AF0056F20B /* DodajViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +82,7 @@
 		ACBCE0A61E71728300D372E7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
 		ACBCE0A71E71728300D372E7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
 		ACF0DBB71E7A88B30056F20B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
-		ACF0DBB91E7A89CE0056F20B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		ACF0DBBB1E7AA27B0056F20B /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
-		ACF0DBBD1E7AA3AF0056F20B /* DodajViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodajViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +119,6 @@
 				AC29216E1E76DFD5001C64D5 /* NavigationViewController.swift */,
 				AC695CF91E77F5850042AE2B /* ListViewController.swift */,
 				AC695CF71E77DF330042AE2B /* ReceiveViewController.swift */,
-				ACF0DBB91E7A89CE0056F20B /* ContactViewController.swift */,
-				ACF0DBBD1E7AA3AF0056F20B /* DodajViewController.swift */,
 				070A0D7D1EC0C4C200F5AE65 /* QRViewController.swift */,
 			);
 			name = ViewControl;
@@ -348,7 +342,6 @@
 			files = (
 				07AD0E251EC1EF1B003880F7 /* SendTableViewCell.swift in Sources */,
 				ACBCE07D1E716C3C00D372E7 /* BalanS.xcdatamodeld in Sources */,
-				ACF0DBBA1E7A89CE0056F20B /* ContactViewController.swift in Sources */,
 				07AD0E1F1EC1C14C003880F7 /* TestViewController.swift in Sources */,
 				070A0D7E1EC0C4C200F5AE65 /* QRViewController.swift in Sources */,
 				AC2035F31E97FA910087C055 /* BalanceTableViewCell.swift in Sources */,
@@ -359,7 +352,6 @@
 				ACF0DBB81E7A88B30056F20B /* ContactTableViewCell.swift in Sources */,
 				ACBCE0771E716C3C00D372E7 /* ViewController.swift in Sources */,
 				ACBCE0751E716C3C00D372E7 /* AppDelegate.swift in Sources */,
-				ACF0DBBE1E7AA3B00056F20B /* DodajViewController.swift in Sources */,
 				AC2035F51E981F6E0087C055 /* AdressTableViewCell.swift in Sources */,
 				AC2921761E76FDE0001C64D5 /* SendViewController.swift in Sources */,
 				AC2921711E76E4E4001C64D5 /* CellTableViewCell.swift in Sources */,

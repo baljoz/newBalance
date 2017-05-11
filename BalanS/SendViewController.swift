@@ -30,7 +30,9 @@ class SendViewController: UIViewController {
         imageView.image = image
         
         //       navigation.titleView.p
-        navigation.titleView = imageView
+        //navigation.titleView = imageView
+        navigation.title = "SEND"
+
         
    /*     self.navigationController.navigationBar.barTintColor = .blueColor()
         self.navigationController.navigationBar.tintColor = .whiteColor()

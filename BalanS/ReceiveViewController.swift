@@ -20,8 +20,8 @@ class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDat
         dugme.target=revealViewController()
         dugme.action = #selector(SWRevealViewController.revealToggle(_:))
         
-        images.append(UIImage(named:"recieve naizmenicni tab 1")!)
-        images.append(UIImage(named:"recieve naizmenicni tab 2")!)
+        images.append(UIImage(named:"ispupceno polje 2")!)
+        images.append(UIImage(named:"udubljeno polje")!)
         table.backgroundColor = nil
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
@@ -30,9 +30,9 @@ class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDat
         imageView.image = image
         
         //       navigation.titleView.p
-        navigation.titleView = imageView
+      //  navigation.titleView = imageView
        
-        
+        navigation.title="RECIEVE"
         // Do any additional setup after loading the view.
     }
 
@@ -41,7 +41,7 @@ class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,12 +51,12 @@ class ReceiveViewController: UIViewController,UITableViewDelegate,UITableViewDat
        
        if indexPath.row%2 == 0
         {
-            cell.img.image = self.images[1]
-        }
-        else
-        {
             cell.img.image = self.images[0]
         }
+       else
+       {
+            cell.img.image = self.images[1]
+       }
         return cell
     }
     

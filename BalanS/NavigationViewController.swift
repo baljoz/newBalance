@@ -13,6 +13,7 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
    
     @IBOutlet weak var navigation: UINavigationItem!
     
+    @IBOutlet weak var emc2: UIBarButtonItem!
     @IBOutlet weak var balanceView: UIView!
     @IBOutlet weak var send: UIButton!
     @IBOutlet weak var balance: UIButton!
@@ -35,13 +36,17 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
         self.navigation.titleView = imageView*/
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "wallet emc2")
+        let image = UIImage(named: "emc2")
         imageView.image = image
         
  //       navigation.titleView.p
-        navigation.titleView = imageView
+       //navigation.titleView = imageView
+        navigation.title = "WALLET"
+       // navigation.titleView.h
+    //emc2.adjustsImageWhenHighlighted = NO
+      //  self.navigationItem.rightBarButtonItem.customView.alpha = 0.5;
         
-       
+        table.allowsSelection = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,7 +72,9 @@ class NavigationViewController: UIViewController,UITableViewDelegate,UITableView
         
         send.isEnabled = false
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+    }
     /*
     // MARK: - Navigation
 
